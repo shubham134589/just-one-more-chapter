@@ -1,0 +1,28 @@
+body{
+    background-image: url("bg.jpg");
+    background-size: cover;
+}
+header.head{
+    width: 70%;
+    height: 40px;
+    background-color: rgba(5, 4, 4, 0.904);
+    text-align: center;
+    margin-left: 15%;
+}
+a.one{
+    text-decoration: none;
+    font-size: 30px;
+    text-align: center;
+    padding: 0px 30px 3px 30px;
+    font-family: Verdana,sans-serif;
+    color: white;
+    
+
+}
+a.one:hover{
+    background-color: rgb(255, 255, 255);
+    height: 40px;
+    color: black;
+
+}
+
