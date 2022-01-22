@@ -1,97 +1,90 @@
-.head{
-    margin-top: 0.75%;
-    position: fixed;
-    width: 80%;
-    background-color: black;
-    /* opacity: 0.4; */
-    margin-left: 10%;
-    margin-right: 10%;
-    height: 40px;
-    text-align: center;
-
-}
-#search{
-  top: 5px;
-  width: 50%;
-  align-items: center;
-  margin-left: 19%;
-  height: 40px;
-  font-size: 30px;
-  border-radius: 15px;
-
-
-}
-.bar{
-
-}
-.mag{
-  height: 50px;
-  width: 50px;
-  top: -10px;
-  border-radius: 50px;
-}
-.intro{
-  background-color: #333;
-  width:500px;
-  height:30px;
-  margin-left: 35%;
-  font-size: 30px;
-  color: azure;
-  text-align: center;
-}
-div.intro:hover{
-  color: orangered;
-}
-header:hover{
-    opacity: 1;
-    text-align: center;
-}
-a.one:link{
-    top: 0px;
-    margin-top: 5%;
-    text-decoration: none;
-    font-size: 35px;
-    padding-left: 30px;
-    text-align: center;
-    align-self: center;
-}
-a.one:hover{
-  text-align: center;
-    font-size: 40px;
-    text-decoration: solid;
-
-}
-#rcorners2 {
-    border-radius: 10px;
-  }
-
 body{
-    background-image: url("bgbook.jpg");
-    background-size: cover;
+    background: #dbdb5e;
 }
-div.scrollmenu {
-  margin-left: 10%;
-    background-color: #333;
-    overflow: auto;
-    white-space: nowrap;
-    width: 80%;
-  }
-  div.scrollmenu::-webkit-scrollbar {
-    display: none;
+header{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 50px;
+    background-color: #333333;
 }
-.img{
-    width: 150px;
-    height: 200px;
-}
-  
-  div.scrollmenu a {
-    display: inline-block;
+.class{
+    position: relative;
+    top: -35px;
+    /*background-color: #161811;*/
     color: white;
-    text-align: center;
-    padding: 8px;
-    text-decoration: none;
-  }
-  
-  div.scrollmenu a:hover {
-    background-color: #777;
-  }
+    left: 15%;
+    /*width: 40%;*/
+    height: 70%;
+}
+.drop-content{
+    /*display: none;*/
+}
+.container {
+    margin-left: 3%;
+    margin-top: 5px ;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+#search{
+    position: relative;
+    top: -35px;
+    background-color: #161811;
+    color: white;
+    left: 15%;
+    width: 35%;
+    height: 65%;
+    border: #161811;
+    border-width: 1px;
+}
+#sb{
+    position: relative;
+    top: -35px;
+    background-color: #161811;
+    color: white;
+    right :-200px;
+    height: 65%;
+    border: #161811;
+    border-width: 1px;
+
+}
+#cross{
+    position: relative;
+    top: -35px;
+    left: 13%;
+    background-color: #161811;
+    color: white;
+    border: #161811;
+    border-width: 1px;
+    /*display: none;*/
+
+}
+#login {
+
+    position: absolute;
+    float: right;
+    top: 5px;
+    right: 15px;
+}
