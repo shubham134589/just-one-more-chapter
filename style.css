@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+#search{
+  top: 5px;
+  width: 150px;
+  align-items: center;
+  margin-left: 5%;
+  height: 40px;
+  font-size: 30px;
+  border-radius: 15px;
+
+
+}
+
+
+.mag{
+  height: 50px;
+  width: 50px;
+  top: -10px;
+  border-radius: 50px;
+}
+.intro{
+  background-color: #333;
+  width:500px;
+  height:30px;
+  margin-left: 35%;
+  font-size: 30px;
+  color: azure;
+  text-align: center;
+}
+div.intro:hover{
+  color: orangered;
+}
+header:hover{
+    opacity: 1;
+    text-align: center;
+}
+body{
+    background-image: url("bgbook.jpg");
+    background-size: cover;
+}
+div.scrollmenu {
+  margin-left: 10%;
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+    width: 80%;
+  }
+  div.scrollmenu::-webkit-scrollbar {
+    display: none;
+}
+.img{
+    width: 150px;
+    height: 200px;
+}
+  
+  div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    text-decoration: none;
+  }
+  
+  div.scrollmenu a:hover {
+    background-color: #777;
+  }
+  .flex-containera{
+    display: flex;
+    width: 75%;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    margin-top: 10%;
+    flex-direction: row;
+
+}
+.flex-containera > div{
+    width: 100px;
+    height: 300px;
+    margin: 30px 80px;
+}
+a img{
+    width: 200px;
+    height: 290px;
+    
+
+}
+a img:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.75), 0 6px 20px 0 rgba(0, 0, 0, 1);
+  }
+.image{
+  width: 250px;
+  height: 350px;
+}
+
+.abc{
+  position: relative;
+  left: 100px;
+  width: 100%;
+  height: 350px;
+  /*display: inline-block;*/
+}
+.side-right{
+  background-color: white;
+  display: inline-block;
+  height: 350px;
+  width: 70%;
+  position: relative;
+  right: 13%;
+}
+.button5{
+  width: 22%;
+  height: 10%;
+  position: relative;
+  top: -1px;
+  background-color: white;
+  border-color: blue;
+  border-width: 2px 3px 0px 2px;
+  padding: 3px;
+  margin: 3px;
+}
+.Para{
+  font-size: 20px;
+  width: 100%;
+  height: fit-content;
+  display: none;
+}
+.logo{
+  position: absolute;
+top: -50px;
+  color: #fff;
+  white-space: nowrap;
+  font-size: 7vw;
+  animation-name:example ;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  font-family: 'Mochiy Pop P One', sans-serif;
+}
+.logo:hover{
+
+}
+@keyframes example {
+  0% {color: #b4953a}
+  10% {color: #58b406 }
+  20% {color: #0db473}
+  30% {color: #0a8eb4}
+  40% {color: #214cb4}
+  50% {color: #6915b4}
+  60% {color: #b214b4}
+  70% {color: #b40d5a}
+  80% {color: #b41111}
+  90% {color: #554a1e}
+
+}

@@ -1,0 +1,127 @@
+body{
+	background-image: url("img/bw4.jpg");
+	align-items: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size:cover;
+	}
+h1{
+	background-color:rgb(127 255 0 / 57%);
+	font-size: 45px;
+	text-align: center;
+	margin-top: 10px;
+	top: 0px;
+	width: 106%;
+	border-radius: 5px;
+	background-size: cover;
+	min-width: 1500px;
+}
+.head{
+    width: 105%;
+    margin-left: -10px;
+    height: 40px;
+    background-color: rgba(5, 4, 4, 0.904);
+    text-align: center;
+    position: relative;
+    margin-top: 5px;
+    top: 0px;
+	min-width: 1500px;
+}
+a.one{
+    text-decoration: none;
+    font-size: 30px;
+    text-align: center;
+    padding: 0px 30px 3px 30px;
+    font-family: Verdana,sans-serif;
+    color: white;
+    min-width: 100%;
+
+}
+a.one:hover{
+    background-color: rgb(255, 255, 255);
+    height: 40px;
+    color: black;
+}
+#two{
+	margin-left: 2cm;
+	margin-right: 2cm;
+}
+.h{
+	background-color:  #0000009c;
+	font-size: 30px;
+	color:azure;
+	margin: 0px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+img{
+	height: 275px;
+	width: 205px;
+}
+.scroll{
+	overflow: auto;
+	display: flex;
+	flex-wrap: horizontal;
+}
+.scroll a{
+	display: inline-block;
+	color: black;
+    text-align: center;
+    padding: 8px;
+	text-decoration: none;
+}
+.scroll a:hover{
+	background-color: rgba(73, 67, 80, 0.2);
+	opacity: 1;
+	color: black;
+	text-decoration-line: underline ;
+
+}
+/*----------Flip Card----------*/
+.flip-card {
+	background-color: transparent;
+	height: 275px;
+	width: 205px;
+	perspective: 1000px;
+	display: inline-block;
+	margin-top: 8px;
+	margin-right: 4px;
+	padding: 0px 4px;
+}
+  
+.flip-card-inner {
+	position: relative;
+	height: 275px;
+	width: 205px;
+	text-align: center;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+	position: absolute;
+	height: 275px;
+	width: 205px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+	background-color: #bbb;
+	color: black;
+  }
+  
+  .flip-card-back {
+	background-color: wheat;
+	color: black;
+	transform: rotateY(180deg);
+  }
+#card-back-content{
+	overflow-block: hidden;
+	padding: 4px;
+	margin-top: -25px;
+}

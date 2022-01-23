@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="NAVBAR.css" type="text/css">
+    <script>
+        function myfun1(){
+            document.getElementById("java").style.display = "inline";
+            document.getElementById("python").style.display = "none";
+            document.getElementById("c++").style.display = "none";
+            document.getElementById("c").style.display = "none";
+            document.getElementById('img').src="java.jpg";
+        }
+        function myfun2(){
+            document.getElementById("python").style.display = "inline";
+            document.getElementById("java").style.display = "none";
+            document.getElementById("c++").style.display = "none";
+            document.getElementById("c").style.display = "none";
+            document.getElementById('img').src="python.jpg";
+        }
+        function myfun3(){
+            document.getElementById("c++").style.display = "inline";
+            document.getElementById("python").style.display = "none";
+            document.getElementById("java").style.display = "none";
+            document.getElementById("c").style.display = "none";
+            document.getElementById('img').src="cpp.jpg";
+        }
+        function myfun4(){
+            document.getElementById("c").style.display = "inline";
+            document.getElementById("python").style.display = "none";
+            document.getElementById("c++").style.display = "none";
+            document.getElementById("java").style.display = "none";
+            document.getElementById('img').src="c.jpeg";
+        }
+        let text = document.getElementById('text');
+
+        window.addEventListener('scroll',function()
+        {
+            let value = window.scrollY;
+            text.style.marginRight = value * 4 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+        })
+    </script>
+
+
+</head>
+<body>
+    <header class="flex-container">
+        <div class="dropdown" ><a class="one" href="NonFiction/NF.html">Non-Fiction</a> <div class="dropdown-content">
+            <a href="NonFiction/NF.html #Finance">Finance</a>
+            <a href="NonFiction/NF.html#Personality">Personality</a>
+            <a href="NonFiction/NF.html#SelfHelp">Self Help</a>
+
+        </div></div>  
+        <div class="dropdown"><a class="one" href="fiction/project.html">Fiction</a><div class="dropdown-content" style="width: 100px;">
+            <a href="#">Adventure</a>
+            <a href="#">Mystery</a>
+            <a href="#">Romance</a>
+            <a href="#">Horror</a>
+
+        </div></div>  
+        <div class="dropdown"><a class="one" href="biographies/biography.html">Biographies</a><div class="dropdown-content" style="width: 100px;">
+            <a href="biographies/biography.html#famous">Famous Personality</a>
+            <a href="biographies/biography.html#sports">Sportsperson</a>
+            <a href="biographies/biography.html#industry">Industralist</a>
+
+        </div></div>
+        <div class="dropdown"><a class="one" href="history/project/History.html">History</a></div>
+        <div class="dropdown"><a class="one" href="COVER PAGE/CourseBook.html">Course Books</a><div class="dropdown-content">
+            <a href="#">1<small>st </small> year</a>
+            <a href="#">2<small>nd </small> year</a>
+            <a href="#">3<small>rd</small> year</a>
+            <a href="#">4<small>th</small> year</a>
+            <a href="#">Programming Languages</a>
+
+        </div></div>  
+        <div><a class="one" href="creator.html">Creater's Corner</a></div>  
+        <div><a class="one" href="LOGIN/login.html">Log In </a></div>  
+</header>
+<div style="display: inline-block;">
+   <h2 id="text" class="logo"> Just One Chapter More. </h2>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+
+    </div>
+ 
+        <br><br><br>
+    <div class="abc" >
+        <div style="display: inline-block; width: 30%;float: left">
+            <img src="java.jpg" id="img" class="image">
+        </div>
+        <div class="side-right">
+            <button class="button5" onclick="myfun1()"> JAVA</button>
+            <button class="button5" onclick="myfun2()" style="border-color: #00cc00"> Python</button>
+            <button class="button5" onclick="myfun3()" style="border-color: yellow"> C++</button>
+            <button class="button5" onclick="myfun4()" style="border-color: red"> C</button>
+            <br><br><br>
+            <p id="java" style="display: inline" class="Para">Java is a class-based, object-oriented programming language and is designed to have as few implementation dependencies as possible.
+                A general-purpose programming language made for developers to write once run anywhere that is compiled Java code can run on all platforms that support Java.
+                Java applications are compiled to byte code that can run on any Java Virtual Machine. The syntax of Java is similar to c/c++.
+                Java is easy to learn.
+                Java was designed to be easy to use and is therefore easy to write, compile, debug, and learn than other programming languages.
+
+                Java is object-oriented.
+                This allows you to create modular programs and reusable code.
+
+                Java is platform-independent.
+                One of the most significant advantages of Java is its ability to move easily from one computer system to another. The ability to run the same program on many different systems is crucial to World Wide Web software, and Java succeeds at this by being platform-independent at both the source and binary levels.</p>
+            <p id="python" class="Para">
+                Python is commonly used for developing websites and software, task automation, data analysis, and data visualization. Since it’s relatively easy to learn, Python has been adopted by many non-programmers such as accountants and scientists, for a variety of everyday tasks, like organizing finances.Python has become a staple in data science, allowing data analysts and other professionals to use the language to conduct complex statistical calculations, create data visualizations, build machine learning algorithms, manipulate and analyze data, and complete other data-related tasks.
+
+                Python can build a wide range of different data visualizations, like line and bar graphs, pie charts, histograms, and 3D plots. Python also has a number of libraries that enable coders to write programs for data analysis and machine learning more quickly and efficiently, like TensorFlow and Keras.
+            </p>
+            <p id="c++" class="Para">
+                C++ is widely used among the programmers or developers mainly in an application domain. It contains the important parts including the core language providing all the required building blocks including variable, data types, literals, etc. It supports object-oriented programming including its features like Inheritance, Polymorphism, Encapsulation, and Abstraction. These concepts make the C++ language different and mostly in use for developing the applications easily and conceptualized.Uses of C++ is referred to as the safest language because of its security and features. It is the first language for any developer to start, who is interested in working in programming languages. It is easy to learn, as it is pure concept-based language. Its syntax is very simple, which makes it easy to write or develop and errors can be easily replicated. Before using any other language, programmers preferred to learn C++ first and then they used other languages. But most of the developers try to stick with C++ only because of its wide variety of usage and compatibility with multiple platforms and software.
+            </p>
+            <p id="c" class="Para">As a middle-level language, C combines the features of both high-level and low-level languages. It can be used for low-level programming, such as scripting for drivers and kernels and it also supports functions of high-level programming languages, such as scripting for software applications etc.
+                C is a structured programming language which allows a complex program to be broken into simpler programs called functions. It also allows free movement of data across these functions.
+                Various features of C including direct access to machine level hardware APIs, the presence of C compilers, deterministic resource use and dynamic memory allocation make C language an optimum choice for scripting applications and drivers of embedded systems.
+                C language is case-sensitive which means lowercase and uppercase letters are treated differently.</p>
+        </div>
+
+
+    </div>
+    <br><br>
+
+    <div class="intro">Reads in your Teens</div>
+    <div class="scrollmenu">
+        <a href="NonFiction/RichDadPoorDad.html"><img src="NonFiction/RichDad.jpg" class="img" alt=""></a>
+        <a href="NonFiction/Savarkar1.html"><img src="NonFiction/VS1.jpg" class="img" alt=""></a>
+        <a href="NonFiction/Chanakya.html"><img src="NonFiction/CN.jpg" class="img" alt=""></a>
+        <a href="NonFiction/Death.html"><img src="NonFiction/Death.jpg" class="img" alt=""></a>
+
+
+
+        <a href="index.html"><img src="NonFiction/TRMIB.jpg" class="img" alt=""></a>
+        <a href="index.html"><img src="NonFiction/OUOWS.jpg" class="img" alt=""></a>
+        <a href="NonFiction/IntelligentInvestor.html"><img src="NonFiction/TheIntelligentInvestor.jpg" class="img" alt=""></a>
+        <a href="index.html"><img src="NonFiction/TPOM.jpg" class="img" alt=""></a>
+        <a href="index.html"><img src="NonFiction/IKI.jpg" class="img" alt=""></a>
+        <a href="index.html"><img src="NonFiction/geeta.jpeg" class="img" alt=""></a>
+
+        <a href="index.html"><img src="NonFiction/VS2.jpg" class="img" alt=""></a>
+        <!-- <a href="index.html"><img src="../RichDad.jpg" class="img" alt=""></a>
+        <a href="index.html"><img src="../TheIntelligentInvestor.jpg" class="img" alt=""></a> -->
+
+    </div>
+    <br><br><br><br><br>
+    <div class="intro">New Release</div>
+    <div class="scrollmenu">
+        <a href="index.html"><img src="NonFiction/DES.jpg" class="img" alt=""></a>
+        <a href="index.html"><img src="NonFiction/CB400.jpg" class="img" alt=""></a>
+        <a href="index.html"><img src="NonFiction/MLIF.jpg" class="img" alt=""></a>
+        <a href="NonFiction/Sbp.html"><img src="NonFiction/DOAWK.jpg" class="img" alt=""></a>
+        <a href="index.html"><img src="NonFiction/JFTJ.jpg" class="img" alt=""></a>
+        <a href="index.html"><img src="NonFiction/TNC.jpeg" class="img" alt=""></a>
+        <a href="index.html"><img src="NonFiction/TCWO.jpg" class="img" alt=""></a>
+        <a href="index.html"><img src="NonFiction/will.jpeg" class="img" alt=""></a>
+        <a href="index.html"><img src="NonFiction/IKI.jpg" class="img" alt=""></a>
+        <a href="index.html"><img src="NonFiction/VS2.jpg" class="img" alt=""></a>
+
+    </div>
+    <main class="flex-containera" style="background-color: #333;" >
+        <div>
+           <a href="#"><img src="biographies/img/aao.jpg" alt=""></a> 
+        </div>
+        <div>
+            <a href="#"><img src="biographies/img/alab.jpg" alt=""></a> 
+         </div>
+         <div>
+            <a href="#"><img src="biographies/img/athtjmb.jpg" alt=""></a> 
+         </div>
+         <div>
+            <a href="#"><img src="biographies/img/btlbm.jpg" alt=""></a> 
+         </div>
+         <div>
+            <a href="#"><img src="biographies/img/bw4.jpg" alt=""></a> 
+         </div>
+         <div>
+            <a href="#"><img src="biographies/img/cc.jpg" alt=""></a> 
+         </div>
+         <div>
+            <a href="#"><img src="biographies/img/em.jpg" alt=""></a> 
+         </div>
+         <div>
+            <a href="#"><img src="course/COVER PAGE/Computer Fundamentals and Programming in C.jpg" alt=""></a> 
+         </div>
+         <div>
+            <a href="#"><img src="course/COVER PAGE/Higher Engineering Mathematics by BS Grewal.jpg" alt=""></a> 
+         </div>
+         <div>
+            <a href="#"><img src="course/COVER PAGE/Let us C by Yashvant Kanetkar (BPB).jpg" alt=""></a> 
+         </div>
+         <div>
+            <a href="#"><img src="course/COVER PAGE/Object-Oriented Analysis and Design.jpg" alt=""></a> 
+         </div>
+         <div>
+            <a href="#"><img src="course/COVER PAGE/Parallel Computing Accelerating Computational Science and Engineering.jpg" alt=""></a> 
+         </div>
+        
+        </main>
+    
+</body>
+</html>
