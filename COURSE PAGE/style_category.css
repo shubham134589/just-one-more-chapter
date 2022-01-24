@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css?family=Audiowide|Trirong");
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Audiowide',sans-serif;
+}
+
+body
+{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(#2b1055,#7597de);
+}
+
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    padding: 30px ;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    margin-top: 1%;
+    background-color: black;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 40px;
+    text-align:center; 
+    border-radius: 50px;
+}
+
+header .logo
+{
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li
+{
+    list-style: none;
+    margin-left: 10px;
+}
+
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+} 
+
+header ul li a:hover,
+header ul li a.active
+{
+    background: #fff;
+    color: #2b1055;
+}
+
+section
+{
+    position: relative;
+    width: 100%;
+    height: 110vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+section::before
+{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#1c0522,transparent);
+    z-index: 1000;
+}
+
+section img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+section img#background
+{
+    opacity: 50%;
+}
+
+section img#foreground
+{
+    z-index: 10;
+}
+
+#text
+{
+    position: absolute;
+    right: -530px;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 7.5vw;
+    z-index: 9;
+}
+
+#btn
+{
+    text-decoration: none;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: black;
+    color: white;
+    font-size: 1.5em;
+    z-index: 9;
+    transform: translateY(100px);
+}
+
+#page_btn
+{
+    text-decoration:solid;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: whitesmoke;
+    color: black;
+    font-size: 0.7em;
+}
+
+.sec
+{
+    position: relative;
+    padding: 100px;
+    background: #1c0522;
+}
+
+.sec h2{
+    font-size: 3.5em;
+    margin: 10px;
+    color: #fff;
+}
+
+.sec p
+{
+    font-size: 1em;
+    color: #fff;
+}
+
+table
+{
+    width: 100%;
+    height: 100%;
+}
+
+.book_image
+{
+    width: 300px;
+    height: 350px;
+}
+
+.book_name
+{
+    color: white;
+    font-family:'Audiowide',sans-serif;
+    font-size: 16px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+}
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    width: 200px;
+    height: fit-content;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    text-align: center;
+  }
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .pointer {cursor: pointer;}

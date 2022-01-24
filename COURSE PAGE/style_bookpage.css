@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css?family=Audiowide|Trirong");
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Audiowide',sans-serif;
+}
+
+body
+{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-image: url(bg1.jpg);
+    background-size: auto;
+}
+
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    padding: 30px ;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    margin-top: 1%;
+    background-color: black;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 40px;
+    text-align:center; 
+    border-radius: 50px;
+}
+
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li
+{
+    list-style: none;
+    margin-left: 10px;
+}
+
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+} 
+
+header ul li a:hover,
+header ul li a.active
+{
+    background: #fff;
+    color: #2b1055;
+}
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+}
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    width: 200px;
+    height: fit-content;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    text-align: center;
+  }
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.head{
+    width: 100%;
+    margin-left: 0px;
+    height: 39px;
+    background-color: rgba(5, 4, 4, 0.904);
+    text-align: center;
+    position: relative;
+    margin-top: -15px;
+    top: 0px;
+	min-width: 1500px;
+}
+a.one{
+    text-decoration: none;
+    font-size: 30px;
+    text-align: center;
+    padding: 0px 30px 3px 30px;
+    font-family: Verdana,sans-serif;
+    color: white;
+    min-width: 100%;
+
+}
+a.one:hover{
+    background-color: rgb(255, 255, 255);
+    height: 40px;
+    color: black;
+}
+img{
+	height: 650px;
+	width: 470px;
+}
+.m{
+    margin: 2cm;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    height: 700px;
+    width: 1000px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color:rgb(127 255 0 / 57%);
+}
+.bn{
+    text-align: center;
+    font-size: xx-large;
+}
+p,td{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    display: inline-block;
+}
+h2{
+    display: inline-block;
+    font-size: 35px;
+}
+.img{
+    margin: 2cm;
+    display: inline-block;
+    margin: 10px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+section{
+    display: flex;
+    justify-content: space-around;
+    height: 700px;
+    width: 100%;
+}
+#nav{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+a{
+    text-decoration: none;
+}
+button{
+    width: 49%;
+    height: 100%;
+    font-size: 25px;
+}
+#button{
+    height: 5%;
+    width: 100%;
+    
+}
+.button{
+    height: 5%;
+    width: 100%;
+}
+button:hover{
+    box-shadow: 4px,4px,4px,5px;
+    background-color: lightgrey;
+    font-size: 27px;
+}
