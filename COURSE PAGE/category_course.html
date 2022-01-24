@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Book | Home</title>
+    <link rel="stylesheet" type="text/css" href="style_category.css">
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><a class="#" href="">Home</a></li>
+            
+            <li class="dropdown"><a class="#" href="">Non-Fiction</a><div class="dropdown-content">
+                <a href="NonFiction/NF.html#Finance">Finance</a>
+                <a href="NonFiction/NF.html#Personality">Personality</a>
+                <a href="NonFiction/NF.html#SelfHelp">Self Help</a></li>
+            <li class="dropdown"><a class="#" href="">Fiction</a><div class="dropdown-content" style="width: 100px;">
+                <a href="#">Adventure</a>
+                <a href="#">Mystery</a>
+                <a href="#">Romance</a>
+                <a href="#">Horror</a>
+            </div></li>
+            <li class="dropdown"><a class="#" href="">Biography</a></li>
+            <li class="dropdown"><a class="active" href="category_course.html">Course Book</a><div class="dropdown-content">
+                <a href="category_maths.html">Maths</a>
+                <a href="category_physics.html">Physics</a>
+                <a href="category_chemistry.html">Chemistry</a>
+                <a href="category_programming.html">Programming Languages</a>
+            </div></li>
+            <li class="dropdown"><a class="#" href="">Historic</a></li>
+            <li class="dropdown"><a class="#" href="">Creater's Corner</a></li>
+            <li class="dropdown"><a class="#" href="">SignIn/SignUp</a></li>
+        </ul>
+</header>
+    <section>
+        <img src="background.jpg" id="background">
+        <h2 id="text">COURSE BOOK</h2>
+        <a href="#sec" id="btn">Explore</a>
+        <img src="foreground.png" id="foreground">
+    </section>
+    
+    <div class="sec" id="sec">
+        <table>
+            <tr>
+               <td><img class="book_image" src="PROGRAMMING_B1.jpg"><br><br><p class="book_name">Database System Concepts | 6th Edition</p><a href="PROGRAMMING_B1.html" target="_blank"><button id="page_btn" class="pointer"><b>Visit Page</b></button></a><br><br></td>
+               <td><img class="book_image" src="MATHS_B2.jpg"><br><br><p class="book_name">Operating Systems Foundations with Linux</p><a href="MATHS_B2.html" target="_blank"><button id="page_btn" class="pointer"><b>Visit Page</b></button></a><br><br></td>
+               <td><img class="book_image" src="PROGRAMMING_B3.jpg"><br><br><p class="book_name">Network Security with pfSense</p><a href="PROGRAMMING_B3.html" target="_blank"><button id="page_btn" class="pointer"><b>Visit Page</b></button></a><br><br></td>     
+            </tr>
+            <tr>
+                <td><img class="book_image" src="PHYSICS_B4.jpg"><br><br><p class="book_name">Mastering Html, Css & Javascript Web Publishing</p><a href="PHYSICS_B4.html" target="_blank"><button id="page_btn" class="pointer"><b>Visit Page</b></button><br><br></td>
+                <td><img class="book_image" src="MATHS_B5.jpg"><br><br><p class="book_name">Operating System: Concepts and Techniques</p><a href="MATHS_B5.html" target="_blank"><button id="page_btn" class="pointer"><b>Visit Page</b></button><br><br></td>
+                <td><img class="book_image" src="PROGRAMMING_B6.jpg"><br><br><p class="book_name">Fundamentals of Database Systems</p><a href="PROGRAMMING_B6.html" target="_blank"><button id="page_btn" class="pointer"><b>Visit Page</b></button><br><br></td>     
+             </tr>
+             <tr>
+                <td><img class="book_image" src="MATHS_B7.jpg"><br><br><p class="book_name">Defensive Security Handbook</p><a href="MATHS_B7.html" target="_blank"><button id="page_btn" class="pointer"><b>Visit Page</b></button></a></td>
+                <td><img class="book_image" src="PROGRAMMING_B8.jpg"><br><br><p class="book_name">C Programming Language</p><a href="PROGRAMMING_B8.html" target="_blank"><button id="page_btn" class="pointer"><b>Visit Page</b></button></a></td>
+                <td><img class="book_image" src="PHYSICS_B8.jpg"><br><br><p class="book_name">C Programming Language</p><a href="PHYSICS_B8.html" target="_blank"><button id="page_btn" class="pointer"><b>Visit Page</b></button></a></td>
+            </tr>
+         </table>
+    </div>
+
+    <script>
+        let background = document.getElementById('background');
+        let foreground = document.getElementById('foreground');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+
+        window.addEventListener('scroll',function()
+        {
+            let value = window.scrollY;
+            background.style.top = value * 0.5 + 'px';
+            foreground.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.Top = value * 0.5 + 'px';
+        })
+    </script>
+</body>
+</html>
